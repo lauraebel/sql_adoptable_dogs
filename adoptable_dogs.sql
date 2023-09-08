@@ -1,8 +1,26 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+-- Dataset Source: kaggle.com, Title: Adoptable Dogs in the US, User: "THE DEVASTATOR"
 
-\f0\fs24 \cf0 CREATE DATABASE adoptable_dogs;}
+-- Adding the first table from the data set listing all adoptable dogs and characteristics
+CREATE TABLE adoptable_dogs.dogs (
+dog_id INT,
+name varchar(255),
+breed_primary varchar(255),
+breed_secondary varchar(255),
+mixed_breed boolean,
+breed_unknown boolean,
+color_primary varchar(255),
+color_secondary varchar(255),
+color_tertiary varchar(255),
+age varchar(30),
+sex varchar(30),
+size varchar(30),
+coat varchar(30),
+fixed boolean,
+house_trained boolean,
+special_needs boolean,
+shots_uptodate boolean,
+good_with_kids boolean,
+good_with_dogs boolean,
+good_with_cats boolean,
+description varchar(255)
+);
