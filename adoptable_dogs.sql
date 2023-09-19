@@ -18,3 +18,6 @@ SELECT COUNT(dog_id) AS female_dogs FROM adoptable_dogs.dogs WHERE sex = 'Female
 -- Counting male dogs available (875)
 SELECT COUNT(dog_id) AS male_dogs FROM adoptable_dogs.dogs WHERE sex = 'Male';
 
+SELECT * FROM adoptable_dogs.moves;
+
+SELECT * FROM adoptable_dogs.locations;
