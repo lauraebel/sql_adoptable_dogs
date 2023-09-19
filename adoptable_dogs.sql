@@ -21,3 +21,18 @@ SELECT COUNT(dog_id) AS male_dogs FROM adoptable_dogs.dogs WHERE sex = 'Male';
 SELECT * FROM adoptable_dogs.moves;
 
 SELECT * FROM adoptable_dogs.locations;
+
+-- Making sure the tables connect - Showing all available dogs in New York
+SELECT name as dogs_in_ny, current_state FROM adoptable_dogs.dogs JOIN adoptable_dogs.locations ON adoptable_dogs.dogs.dog_id HAVING current_state = "NY";
+
+-- Dog id from the locations table does not exist in the dogs table
+SELECT * FROM adoptable_dogs.dogs WHERE dog_id = 45987719;
+
+-- Dog id from the locations table does not exist in the dogs table
+SELECT * FROM adoptable_dogs.dogs WHERE dog_id = 45555304;
+
+-- Dog id from the dogs table does not exist in the locations table
+SELECT * FROM adoptable_dogs.locations WHERE dog_id = 46039306;
+
+-- Dog id from the dogs table does not exist in the locations table
+SELECT * FROM adoptable_dogs.locations WHERE dog_id = 44431034;
