@@ -21,4 +21,7 @@ Data Cleaning:
 - Added a "location_id" column to the locations table to tie it to the moves table
 
 Challenges:
-
+- I have never used MySql before so I had to do a lot of research and trial and error to download it, create a database, import data, etc.
+- CSV file automatically had utf-8 with BOM encoding which would not allow it to be imported into mysql so had to use cotEditor to change the language to ascii
+- Issues with Boolean when importing csv to mysql so changing Boolean to varchar and changing true/false to yes/no
+- Had to drop and re-import table to fix name of first column due to strange characters and not being able to use correct sql syntax (>>)
